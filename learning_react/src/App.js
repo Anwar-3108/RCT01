@@ -1,20 +1,10 @@
-
-import './App.css';
-
-
+import Video from "./components/Video";
 
 export default function App() {
- 
   return (
-    <div className="App">
-    <div className="App-header">
-    <h1>App is Live</h1>
-  
-    </div>
+    <div>
+      <h1>Hello ji</h1>
+      <Video></Video>
     </div>
   );
 }
-
-
-
-
