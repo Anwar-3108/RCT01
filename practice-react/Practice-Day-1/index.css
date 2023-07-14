@@ -1,0 +1,9 @@
+.container{
+
+background-color: teal;
+color: white;
+}
+.container>img,h1,h2{
+  margin-left: 30%;
+ 
+}
