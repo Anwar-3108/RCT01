@@ -1,0 +1,26 @@
+{
+  "name": "practice-day-2",
+  "version": "1.0.0",
+  "description": "This is a Practice Repo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anwar-3108/RCT01.git"
+  },
+  "author": "syed anwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anwar-3108/RCT01/issues"
+  },
+  "homepage": "https://github.com/Anwar-3108/RCT01#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
