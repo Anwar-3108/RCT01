@@ -1,9 +1,87 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "King",
+      "email": "king1@gmail.com",
+      "rating": "4",
+      "address": "noida"
+    },
+    {
+      "id": 2,
+      "name": "Barista corner",
+      "email": "bc2@gmail.com",
+      "rating": "4",
+      "address": "noida"
+    },
+    {
+      "id": 3,
+      "name": "kafka",
+      "email": "kafka3@gmail.com",
+      "rating": "4",
+      "address": "noida"
+    },
+    {
+      "id": 4,
+      "name": "Chaiwalaz",
+      "email": "chaiwalaz4@gmail.com",
+      "rating": "4",
+      "address": "kanpur"
+    },
+    {
+      "id": 5,
+      "name": "Barra king",
+      "email": "BK5@gmail.com",
+      "rating": "4.4",
+      "address": "Barra Kanpur"
+    },
+    {
+      "id": 6,
+      "name": "Chai sutta Bar",
+      "email": "csb6@gmail.com",
+      "rating": "3.8",
+      "address": "jajmau"
+    },
+    {
+      "id": 7,
+      "name": "haldiram ji",
+      "email": "haldiram@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "zayka",
+      "email": "zayka8@gmail.com",
+      "rating": "4.2",
+      "address": "delhi"
+    },
+    {
+      "id": 9,
+      "name": "italian grind",
+      "email": "ig9@gmail.com",
+      "rating": "4.1",
+      "address": "gurgaon"
+    },
+    {
+      "id": 10,
+      "name": "muradabadi chicken",
+      "email": "mc10@gmail.com",
+      "rating": "3.9",
+      "address": "kanpur"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
