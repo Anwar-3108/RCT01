@@ -1,25 +1,12 @@
 import React, { useEffect, useState } from "react";
 import SpinnerComp from "./Spinner";
 import CardCopm from "./CardComp";
-const RestaurantList = () => {
-  const [data, setData] = useState({
-    list: null,
-  });
+const RestaurantList = ({getApiData,loading,setLoading, data}) => {
 
-  const [loading, setLoading] = useState(true);
 
-  const getApiData = async () => {
-    try {
-      setLoading(true);
-      const res = await fetch("http://localhost:3000/restaurant");
-      const apidata = await res.json();
-      setData({ list: apidata });
-      console.log(apidata);
-      setLoading(false);
-    } catch (error) {
-      console.log("error while fetching data from api", error);
-    }
-  };
+
+
+  
 
   useEffect(() => {
     getApiData();
@@ -36,7 +23,7 @@ const RestaurantList = () => {
           return (
             // <h1 key={i}>{e.name}</h1>
          
-              <CardCopm {...e}  key={i} />
+              <CardCopm {...e}  key={i} getApiData={getApiData} />
            
           );
         })}  </div>

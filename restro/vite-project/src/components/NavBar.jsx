@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -6,7 +7,19 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({getApiData}) => {
+
+const [searchText, setSearch]= useState("") ;
+
+const handleSearch=()=>{
+ 
+
+getApiData(searchText) ;
+
+}
+
+
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -20,7 +33,7 @@ const NavBar = () => {
           >
             <Nav.Link>
               <Link style={{ textDecoration: "none", color: "black" }} to="/">
-                Home
+                <span class="material-symbols-outlined">home</span>
               </Link>{" "}
             </Nav.Link>
             <Nav.Link>
@@ -28,7 +41,7 @@ const NavBar = () => {
                 style={{ textDecoration: "none", color: "black" }}
                 to="/create"
               >
-                Create
+                <span class="material-symbols-outlined">draw</span>
               </Link>{" "}
             </Nav.Link>
             <Nav.Link>
@@ -55,8 +68,12 @@ const NavBar = () => {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              onChange={(event)=>{setSearch(event.target.value)}}
+
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-success"   onClick={handleSearch} >
+              <span class="material-symbols-outlined">search</span>
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Container>

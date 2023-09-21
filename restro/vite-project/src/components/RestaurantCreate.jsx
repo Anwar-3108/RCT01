@@ -6,6 +6,7 @@ const RestaurantCreate = () => {
     email: null,
     rating: null,
     address: null,
+    image: null
   });
 
   const create = (event) => {
@@ -20,6 +21,7 @@ const RestaurantCreate = () => {
     });
 
     console.log({ leData });
+    alert('Item added successfully')
    
   };
 
@@ -60,6 +62,14 @@ const RestaurantCreate = () => {
           placeholder="address"
           onChange={(event) => {
             setData({ ...leData, address: event.target.value });
+          }}
+        />{" "} <br />
+        <input
+          required
+          type="url"
+          placeholder="Image url"
+          onChange={(event) => {
+            setData({ ...leData, image: event.target.value });
           }}
         />{" "}
         <br />
