@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 
-const RestaurantCreate = () => {
+const RestaurantCreate = ({props}) => {
   const [leData, setData] = useState({
     name: null,
     email: null,
@@ -22,7 +22,8 @@ const RestaurantCreate = () => {
 
     console.log({ leData });
     alert('Item added successfully')
-   
+    
+  
   };
 
   return (
@@ -79,4 +80,4 @@ const RestaurantCreate = () => {
   );
 };
 
-export default RestaurantCreate;
+export default memo(RestaurantCreate);

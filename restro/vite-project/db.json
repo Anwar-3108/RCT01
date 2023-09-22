@@ -1,4 +1,7 @@
-{
+{  "login":[{
+  "email":"syed@test.com",
+  "password": "1234"
+}],
   "restaurant": [
     {
       "name": "New Gen",
@@ -9,12 +12,12 @@
       "id": 2
     },
     {
-      "name": "kaaf",
-      "email": "kaaf@gmail.com",
-      "rating": "5",
-      "address": "afganistan",
-      "id": 3,
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "name": "Kaaf",
+      "email": "kaaf@test.com",
+      "rating": "4",
+      "address": "Afganistan",
+      "image": "https://imgs.search.brave.com/ZWgJDvNoSehI0-IiQxiOYqv3HIljPP_s8aN4hapPUwU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/OTA4NDY0MDY3OTIt/MGFkYzdmOTM4ZjFk/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4T1h4/OGNtVnpkR0YxY21G/dWRIeGxibnd3Zkh3/d2ZIeDhNQT09Jnc9/MTAwMCZxPTgw.jpeg",
+      "id": 3
     },
     {
       "id": 4,

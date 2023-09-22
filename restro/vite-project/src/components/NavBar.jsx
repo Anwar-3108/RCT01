@@ -1,13 +1,10 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-
-
-
 
 const NavBar = ({ getApiData }) => {
   const [searchText, setSearch] = useState("");
@@ -50,12 +47,12 @@ const NavBar = ({ getApiData }) => {
               <Link
                 key={"3"}
                 style={{ textDecoration: "none", color: "black" }}
-                to="/details"
+                to="/login"
               >
-                Details
+                <span class="material-symbols-outlined">account_circle</span>
               </Link>{" "}
             </Nav.Link>
-            <Nav.Link key={"0.4"}>
+            {/* <Nav.Link key={"0.4"}>
               <Link
                 key={"4"}
                 style={{ textDecoration: "none", color: "black" }}
@@ -63,7 +60,7 @@ const NavBar = ({ getApiData }) => {
               >
                 Search
               </Link>{" "}
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -85,4 +82,4 @@ const NavBar = ({ getApiData }) => {
   );
 };
 
-export default NavBar;
+export default memo(NavBar);

@@ -7,6 +7,7 @@ import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import NavBar from "./components/Navbar";
 import ErrorComp from "./components/ErrorComp";
+import Login from "./components/Login";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -64,6 +65,7 @@ function App() {
             <Route key={'14'} path="/update" element={<RestaurantUpdate />} />
             <Route key={'15'} path="/update/:id" element={<RestaurantUpdate />} />
             <Route key={'16'} path="/search" element={<RestaurantSearch />} />
+            <Route key={'17'} path="/login" element={<Login />} />
             <Route  path="*" element={<ErrorComp />} />
           </Routes>
         </Router>

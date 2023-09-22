@@ -3,22 +3,7 @@ import { json, useParams } from "react-router-dom";
 import { useState } from "react";
 
 const RestaurantUpdate = () => {
-  const { id } = useParams();
-  // console.log('this is id',id);
-
-
-  // const [name, setName] = useState("");
-  // const getItemData = async (event) => {
-  //   event.preventDefault();
-  //   try {
-  //     const respData = await fetch(`http://localhost:3000/restaurant/${id}`);
-  //     const jData = await JSON.stringify(respData);
-  //     console.log("jsonData", jData);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-  // getItemData();
+  const { id } = useParams();  
 
   const [leData, setData] = useState({
     name: null,

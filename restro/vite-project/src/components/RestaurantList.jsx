@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import SpinnerComp from "./Spinner";
 import CardCopm from "./CardComp";
 const RestaurantList = ({getApiData,loading,setLoading, data}) => {
@@ -34,4 +34,4 @@ const RestaurantList = ({getApiData,loading,setLoading, data}) => {
   );
 };
 
-export default RestaurantList;
+export default memo(RestaurantList);
