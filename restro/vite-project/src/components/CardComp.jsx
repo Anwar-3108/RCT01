@@ -41,13 +41,13 @@ getApiData()) : "" ;
             to={"/update/" + id}
             style={{ color: "white", textDecoration: "none" }}
           >
-            <span class="material-symbols-outlined">edit</span>
+            <span className="material-symbols-outlined">edit</span>
           </Link>{" "}
         </Button>
         <Button variant="danger" style={{ marginLeft: "2%" }} onClick={()=>dlt(id)}>
           {" "}
         
-            <span class="material-symbols-outlined">delete</span>
+            <span className="material-symbols-outlined">delete</span>
           
         </Button>
       </Card.Body>

@@ -55,15 +55,16 @@ function App() {
                   loading={loading}
                   setLoading={setLoading}
                   data={data}
+                  key={'11'}
                 />
               }
             />
-            <Route path="/create" element={<RestaurantCreate />} />
-            <Route path="/details" element={<RestaurantDetail />} />
-            <Route path="/update" element={<RestaurantUpdate />} />
-            <Route path="/update/:id" element={<RestaurantUpdate />} />
-            <Route path="/search" element={<RestaurantSearch />} />
-            <Route path="*" element={<ErrorComp />} />
+            <Route key={'12'} path="/create" element={<RestaurantCreate />} />
+            <Route key={'13'} path="/details" element={<RestaurantDetail />} />
+            <Route key={'14'} path="/update" element={<RestaurantUpdate />} />
+            <Route key={'15'} path="/update/:id" element={<RestaurantUpdate />} />
+            <Route key={'16'} path="/search" element={<RestaurantSearch />} />
+            <Route  path="*" element={<ErrorComp />} />
           </Routes>
         </Router>
       </div>

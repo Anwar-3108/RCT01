@@ -3,8 +3,8 @@
     {
       "name": "New Gen",
       "email": "ng@test.com",
-      "rating": "3",
-      "address": "azadnagar",
+      "rating": "4",
+      "address": "Azadnagar",
       "image": "https://imgs.search.brave.com/ZWgJDvNoSehI0-IiQxiOYqv3HIljPP_s8aN4hapPUwU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/OTA4NDY0MDY3OTIt/MGFkYzdmOTM4ZjFk/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4T1h4/OGNtVnpkR0YxY21G/dWRIeGxibnd3Zkh3/d2ZIeDhNQT09Jnc9/MTAwMCZxPTgw.jpeg",
       "id": 2
     },
@@ -71,14 +71,6 @@
       "rating": "3.9",
       "address": "kanpur",
       "image": "https://picsum.photos/seed/picsum/200/300"
-    },
-    {
-      "name": "new gen",
-      "email": "ng@test.com",
-      "rating": "3",
-      "address": "azadnagar",
-      "image": "https://imgs.search.brave.com/ZWgJDvNoSehI0-IiQxiOYqv3HIljPP_s8aN4hapPUwU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/OTA4NDY0MDY3OTIt/MGFkYzdmOTM4ZjFk/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4T1h4/OGNtVnpkR0YxY21G/dWRIeGxibnd3Zkh3/d2ZIeDhNQT09Jnc9/MTAwMCZxPTgw.jpeg",
-      "id": 11
     }
   ],
   "comments": [

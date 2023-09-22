@@ -1,10 +1,24 @@
 import React, { memo } from "react";
-import { useParams } from "react-router-dom";
+import { json, useParams } from "react-router-dom";
 import { useState } from "react";
 
 const RestaurantUpdate = () => {
   const { id } = useParams();
   // console.log('this is id',id);
+
+
+  // const [name, setName] = useState("");
+  // const getItemData = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     const respData = await fetch(`http://localhost:3000/restaurant/${id}`);
+  //     const jData = await JSON.stringify(respData);
+  //     console.log("jsonData", jData);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  // getItemData();
 
   const [leData, setData] = useState({
     name: null,
@@ -16,18 +30,21 @@ const RestaurantUpdate = () => {
 
   const update = (event) => {
     event.preventDefault();
+    try {
+      fetch(`http://localhost:3000/restaurant/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(leData),
+      });
 
-    fetch(`http://localhost:3000/restaurant/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(leData),
-    });
+      console.log({ leData });
 
-    console.log({ leData });
-
-    alert("Card Updated Successfully");
+      alert("Card Updated Successfully");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
