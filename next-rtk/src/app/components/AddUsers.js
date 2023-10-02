@@ -1,6 +1,17 @@
-import React from "react";
+"use client";
 
+import React, { useState } from "react";
+import { addUser } from "@/redux/slice";
+import { useDispatch } from "react-redux";
 const AddUsers = () => {
+  const [name, setName] = useState("");
+  const dispatch = useDispatch();
+
+  const userDispatch = () => {
+    console.table(name);
+    dispatch(addUser(name));
+  };
+
   return (
     <>
       <div className="add-user">
@@ -8,6 +19,7 @@ const AddUsers = () => {
           className="add-user-input"
           type="text"
           placeholder="Add New User"
+          onChange={(e) => setName(e.target.value)}
         />
         <button
           style={{
@@ -18,6 +30,7 @@ const AddUsers = () => {
             color: "white",
             background: "teal",
           }}
+          onClick={userDispatch}
         >
           Add
         </button>
